@@ -1,0 +1,65 @@
+<div>
+    <!-- trang chỉ html
+toàn bộ phần html sẽ hiển thị ng-view
+khi người dùng vào đường dẫn #!/  -->
+    <a href="#!/quan-ly-them-moi">
+        Thêm mới
+    </a>
+    <div class="content-center" style="text-align: center;">+
+        <h1>Thong tin ca nhan</h1>
+        <p class=""><h1>Ten: {{thong_tin_ca_nhan.ten}}</h1></p>
+        <p>Tuoi : {{thong_tin_ca_nhan.tuoi}}</p>
+        <p>dia chi : {{thong_tin_ca_nhan.dia_chi}}</p>
+        <div>
+            <input type="text" name="" id="" ng-keyup="layTuoi($event)" placeholder="Nhap Tuoi">
+            <button ng-click="tangTuoi()">Tang tuoi</button>
+        </div>
+    </div>
+    <div>
+        <h1 style="text-align: center;">Thong tin nguoi yeu</h1>
+        <h1>{{loading ? 'loading...' : ''}}</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ten</th>
+                    <th>Anh</th>
+                    <th>Tuoi</th>
+                    <th>Dia chi</th>
+                    <th>Biet danh</th>
+                    <th>so thich</th>
+                    <th>Trang thai</th>
+                    <th>Hanh dong</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <!-- ng-repat="Phan_tu_sau_moi_vong_lap" -->
+                <tr ng-repeat="tung_ny in nguoi_yeu">
+                    <th class="p-5">{{tung_ny.id}}</th>
+                    <th class="p-5 px-2">{{tung_ny.ten}}</th>
+                    <th><img src="{{tung_ny.image}}" alt="" style="width: 200px;"></th>
+                    <th class="p-5">{{tung_ny.tuoi}}</th>
+                    <th class="p-5">{{tung_ny.dia_chi}}</th>
+                    <th class="p-5">{{tung_ny.biet_danh}}</th>
+                    <th class="p-5">{{tung_ny.so_thich}}</th>
+                    <!-- <th class="p-5">{{tung_ny.trang_thai == 1 ? "dang yeu" : "dang doi" }}</th> -->
+                    <th class="p-5 mb-2" ng-if="!tung_ny.trang_thai == 1" ng-checked="tu">Dang Yeu</th>
+                    <th class="p-5" ng-if="!tung_ny.trang_thai == 2">Dang doi</th>
+                    <th class="p-5" ng-if="!tung_ny.trang_thai == 0">Khong Dang Yeu</th>
+                    <th class="p-5">
+                        <a href="#!/quan-ly-chi-tiet/{{tung_ny.id}}">
+                            <button class="btn btn-success mb-3">
+                                Chi tiết
+                            </button>
+                        </a>
+                        <button class="btn btn-danger mb-3" ng-click="onDelete(tung_ny.id)">xóa</button>
+                        
+                        <a href="#!/quan-ly-sua/{{tung_ny.id}}">
+                            <button class="btn btn-primary mb-3">sửa</button>
+                        </a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

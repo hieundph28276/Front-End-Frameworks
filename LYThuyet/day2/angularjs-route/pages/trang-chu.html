@@ -1,0 +1,14 @@
+<!-- trang chỉ html
+toàn bộ phần html sẽ hiển thị ng-view
+khi người dùng vào đường dẫn #!/  -->
+<h1>ND{{content}}</h1>
+<div class="content-center" style="text-align: center;">
+    <h1>Thong tin ca nhan</h1>
+    <p class="">Ten: {{thong_tin_ca_nhan.ten}}</p>
+    <p>Tuoi : {{thong_tin_ca_nhan.tuoi}}</p>
+    <p>dia chi : {{thong_tin_ca_nhan.dia_chi}}</p>
+    <div>
+        <input type="text" name="" id="" ng-keyup="layTuoi($event)" placeholder="Nhap Tuoi">
+        <button ng-click="tangTuoi()">Tang tuoi</button>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{
+    "BDS" : 
+    [
+        {
+            "id" : 1,
+            "name" : "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
+            "type_id" : 0,
+            "area" : "90 m²",
+            "price" : "7 tỷ",
+            "image_url" : "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
+            "status" : 0
+        },
+        {
+            "id" : 2,
+            "name" : "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
+            "type_id" : 0,
+            "area" : "90 m²",
+            "price" : "7 tỷ",
+            "image_url" : "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
+            "status" : 0
+        }
+    ],
+    "thong_tin" :
+    [
+        {
+            "id" : 1,
+            "name" : "Chung Cư"
+        },
+        {
+            "id" : 2,
+            "name" : "Nhà đất"
+        },
+        {
+            "id" : 3,
+            "name" : "Đất"
+        }
+    ]
+}

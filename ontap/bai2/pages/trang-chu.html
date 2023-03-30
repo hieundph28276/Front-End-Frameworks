@@ -1,0 +1,55 @@
+<!-- <h1>ND{{title}}</h1> -->
+<div>
+    <div>
+        <button class="btn btn-outline-primary" ng-click="showForm()">Thêm Mới</button>
+    </div>
+    <div ng-if="isShowForm">
+        <form class="controller">
+            <div class="mb-3">
+
+                
+                <label class="form-label" for="">Tên </label>
+                <input class="form-control" ng-model="inpust.ten">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="">Ảnh</label>
+                <input class="form-control" ng-model="inpust.image">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="">Tuổi</label>
+                <input class="form-control" ng-model="inpust.tuoi">
+            </div>
+            <p>{{inpust.ten}}</p>
+            <button class="btn btn-outline-danger" ng-click="hideForm()">Xóa</button>
+            <button class="btn btn-outline-info" ng-click="onSave()">Lưu</button>
+        </form>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Tên người yêu</td>
+            <td>ảnh</td>
+            <td>tuổi</td>
+            <td>Hành động</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="ny in nguoi_yeu">
+            <td>{{ny.id}}</td>
+            <td>{{ny.ten}}</td>
+            <td><img style="width: 250px;" src="{{ny.image}}" alt=""></td>
+            <td>{{ny.tuoi}}</td>
+            <td>
+                <a href="#!/chi-tiet/{{ny.id}}/{{ny.ten}}/{{ny.image}}">
+                    <button class="btn btn-outline-primary" >
+                        Chi tiết
+                    </button>
+                </a>
+                <button class="btn btn-outline-danger" ng-click="onEdit(ny.id)">Sửa</button>
+                <button class="btn btn-outline-warning">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

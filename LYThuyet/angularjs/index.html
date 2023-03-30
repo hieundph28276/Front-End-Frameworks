@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="angularApp">
+    <header ng-controller="HeaderController">
+        heDER 
+        {{title}}
+    </header>
+    <main ng-controller="MainController">
+        main
+        {{mainTitle}}
+        {{name}}
+       <p>Ten thanh vien : {{user.name}}</p>
+       <p>dia chi : {{user.address}}</p>
+       <p>email : {{user.email}}</p>
+    </main>
+    <footer ng-controller="FooterController">
+        footer
+        {{footerTitle}}
+
+    </footer>
+    <!-- script dua vao thu vien nam tren cung -->
+    <script src="libs/angular.min.js"></script>
+    <script>
+        // angular la 1 bien duoc cung cap boi thu vien
+        // angular.module se dinh nghia vung quan ly cua app angular
+        var app = angular.module('angularApp', []);
+        app.controller('HeaderController', function($scope){
+            // $scope la mot doi tuong duc angular cung cap san
+            // phuc vu viec quan ly cac thuoc tinh , phuong thuc
+            // trong vung controller dc dinh nghia o html
+            $scope.title = 'Tieu de cua web browser';
+        });
+        app.controller('MainController',function($scope){
+            // thuoc tinh hay phuong thuc ding nghia o controller
+            // se ko dung dc o controoler khac
+            $scope.mainTitle = 'Tieu de cua web';
+            var name = '08/03 ads';
+            //  cho nao can hien thi gia tri de hien thi ms dua vao scope
+            // {{user.name}} {{user.address}} {{user.email}}
+            $scope.name = name;
+            $scope.user = {
+                name: 'hieu',
+                address : 'hanoi',
+                email : 'hieundph28276@fpt'
+            };
+        });
+        app.controller('FooterController', function($scope){
+            $scope.footerTitle = 'Tieu de cua web';
+        });
+    </script>
+</body>
+</html>

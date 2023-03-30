@@ -1,0 +1,29 @@
+{
+  "nguoi-yeu": [
+    {
+      "id": 1,
+      "ten": "trần thi",
+      "biet_danh": "Meomeo",
+      "tuoi": 18,
+      "dia_chi": "Royal city",
+      "so_thich": "Thich Anh",
+      "trang_thai": 0,
+      "image": "https://hinhgaixinh.com/wp-content/uploads/2022/03/anh-gai-xinh-hoc-sinh-tuyet-dep.jpg"
+    },
+    {
+      "id": 2,
+      "ten": "trần thi",
+      "biet_danh": "Meomeo",
+      "tuoi": 18,
+      "dia_chi": "Royal city",
+      "so_thich": "Thich Anh",
+      "trang_thai": 0,
+      "image": "https://hinhgaixinh.com/wp-content/uploads/2022/03/anh-gai-xinh-hoc-sinh-tuyet-dep.jpg"
+    }
+  ],
+  "ttcn": {
+    "ten": "Khánh trốc tru",
+    "tuoi": 18,
+    "dia_chi": "Thái Bình"
+  }
+}

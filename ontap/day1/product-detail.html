@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body ng-app="angularApp">
+    <div class="container">
+        <header ng-controller="HeaderController" class="p-3 mb-2 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                </a>
+      
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="container.html" class="nav-link px-2 text-white">Features</a></li>
+                  <li><a href="container.html" class="nav-link px-2 text-white">Pricing</a></li>
+                  <li><a href="" class="nav-link px-2 text-white">FAQs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+      
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                    aria-label="Search">
+                </form>
+      
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main ng-controller="MainController">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success">{{product.name}}</strong>
+                  <h3 class="mb-0">{{product.name}}</h3>
+                  <div class="mb-1 text-muted">{{product.name}}</div>
+                  <p class="mb-auto">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.</p>
+                  <a href="#" class="stretched-link">أكمل القراءة</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <svg class="bd-placeholder-img" width="650" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-image: url({{product.Image}});"></svg>
+                </div>
+            </div>
+            <main>
+                <h1>{{product.name}}</h1>
+                <p class="fs-5 col-md-8"></p>
+            
+                <div class="mb-5">
+                  <a href="/docs/5.3/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+                </div>
+                MacBook Air M1 Là máy tính xách tay mỏng và nhẹ nhất của Apple – nay thay đổi ngoạn mục với chip Apple M1 mạnh mẽ. Tạo ra một cú nhảy vọt về hiệu năng CPU và đồ họa, cùng thời lượng pin lên đến 18 giờ.
+
+                Tính năng nổi bật
+                Chip M1 do Apple thiết kế tạo ra một cú nhảy vọt về hiệu năng máy học, CPU và GPU
+                Tăng thời gian sử dụng với thời lượng pin lên đến 18 giờ
+                CPU 8 lõi cho tốc độ nhanh hơn đến 3.5x, xử lý công việc nhanh chóng hơn bao giờ hết
+                GPU lên đến 8 lõi với tốc độ xử lý đồ họa nhanh hơn đến 5x cho các ứng dụng và game đồ họa khủng
+                Neural Engine 16 lõi cho công nghệ máy học hiện đại
+                Bộ nhớ thống nhất 8GB giúp bạn làm việc gì cũng nhanh chóng và trôi chảy
+                Ổ lưu trữ SSD siêu nhanh giúp mở các ứng dụng và tập tin chỉ trong tích tắc
+                Thiết kế không quạt giảm tối đa tiếng ồn khi sử dụng
+                Màn hình Retina 13.3 inch với dải màu rộng P3 cho hình ảnh sống động và chi tiết ấn tượng
+                Camera FaceTime HD với bộ xử lý tín hiệu hình ảnh tiên tiến cho các cuộc gọi video đẹp hình, rõ tiếng hơn
+                Bộ ba micro phối hợp tập trung thu giọng nói của bạn, không thu tạp âm môi trường
+                Wi-Fi 6 thế hệ mới giúp kết nối nhanh hơn
+                Hai cổng Thunderbolt / USB 4 để sạc và kết nối phụ kiện
+                Bàn phím Magic Keyboard có đèn nền và Touch ID giúp mở khóa và thanh toán an toàn hơn
+                macOS Big Sur với thiết kế mới đầy táo bạo cùng nhiều cập nhật quan trọng cho các ứng dụng Safari, Messages và Maps
+                Hiện có màu vàng kim, xám bạc và bạc
+                Bộ sản phẩm bao gồm   
+                <hr class="col-3 col-md-2 mb-5">
+            
+                  
+              </main>
+          </main>
+<!-- footer -->
+          <footer class="p-3 mb-2 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                </a>
+      
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+      
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                    aria-label="Search">
+                </form>
+      
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div> -->
+            </div>
+          </footer>
+    </div>
+    <script src="libs/angular.min.js"></script>
+    <script>
+      var app = angular.module('angularApp', []);
+      app.controller('MainController',function ($scope){
+        // $scope.name = 'MainController';
+        $scope.product = {
+          name: 'MacBook Air M1 2020',
+          price : '19.790.000',
+          dessc : 'MacBook Air M1 2020 (8GB RAM | 256GB SSD)',
+          Image : 'https://images2.thanhnien.vn/528068263637045248/2023/2/14/macbook-air-m2-1676361464865294752901.jpg'
+        };
+      });
+      app.controller('HeaderController',function($scope) {
+
+      })
+    </script>
+</body>
+</html>
