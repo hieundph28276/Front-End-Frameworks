@@ -1,10 +1,15 @@
 var GirlFrendAddController = function($scope, $http, $location){
-    $scope.inpust = {
+    $scope.inputs = {
         ten: '',
-        tuoi: 0
+        biet_danh: '',
+        tuoi: 0,
+        dia_chi:'',
+        so_thich: '',
+        trang_thai: 0,
+        image: ''
     }
     $scope.onSave = function(){
-        $http.post(API_NY, $scope.inpust).then(
+        $http.post(API_NY, $scope.inputs).then(
             function(res){$location.path('/quan-ly')},
             function(err){}
             )

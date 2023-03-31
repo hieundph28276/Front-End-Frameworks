@@ -1,38 +1,54 @@
 {
-    "BDS" : 
-    [
-        {
-            "id" : 1,
-            "name" : "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
-            "type_id" : 0,
-            "area" : "90 m²",
-            "price" : "7 tỷ",
-            "image_url" : "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
-            "status" : 0
-        },
-        {
-            "id" : 2,
-            "name" : "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
-            "type_id" : 0,
-            "area" : "90 m²",
-            "price" : "7 tỷ",
-            "image_url" : "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
-            "status" : 0
-        }
-    ],
-    "thong_tin" :
-    [
-        {
-            "id" : 1,
-            "name" : "Chung Cư"
-        },
-        {
-            "id" : 2,
-            "name" : "Nhà đất"
-        },
-        {
-            "id" : 3,
-            "name" : "Đất"
-        }
-    ]
+  "BDS": [
+    {
+      "id": 1,
+      "name": "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
+      "type_id": "1",
+      "area": 90,
+      "price": 7,
+      "image_url": "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "name": "Cơ hội sở hữu shophouse view sông hàng cực hiếm",
+      "type_id": 0,
+      "area": 90,
+      "price": 7,
+      "image_url": "https://file4.batdongsan.com.vn/resize/200x200/2023/03/23/20230323213012-f67e_wm.jpg",
+      "status": 0
+    },
+    {
+      "name": "hahahah",
+      "type_id": "1",
+      "area": 0,
+      "price": 50000,
+      "image_url": "https://hinhgaixinh.com/wp-content/uploads/2022/03/anh-gai-xinh-hoc-sinh-tuyet-dep.jpg",
+      "status": "2",
+      "id": 3
+    },
+    {
+      "name": "Bé nhi",
+      "type_id": "0",
+      "area": "",
+      "price": "10000",
+      "image_url": "https://hinhgaixinh.com/wp-content/uploads/2022/03/anh-gai-xinh-hoc-sinh-tuyet-dep.jpg",
+      "status": "1",
+      "id": 5
+    },
+    {
+      "name": "babab",
+      "type_id": "1",
+      "area": "",
+      "price": "20",
+      "image_url": "https://khoinguonsangtao.vn/wp-content/uploads/2022/09/hinh-anh-gai-xinh-viet-nam.jpg",
+      "status": "1",
+      "id": 6
+    }
+  ],
+  "thong_tin": {
+    "id": 1,
+    "name": "Nguyễn Đức Hiếu",
+    "tuoi": 19
+  }
 }

@@ -1,4 +1,61 @@
-<form ng-submit="onSave()">
-    <input ng-model="inputs.ten" type="text" placeholder="Tên">
+<!-- <form ng-submit="onSave()">
+    <input ng-model="inputs.ten" placeholder="Tên">
     <button type="submit">Lưu</button>
-</form>
+</form> -->
+
+<div style="text-align: center;">
+    <!-- <div class="float-end">
+        <button class="btn btn-primary mb-3" ng-click="showForm()">Thêm Mới</button>
+    </div> -->
+    <div class="" >
+        <form ng-submit="onSave()" class="width 100" style="width: 600px;">
+            <label class="float-start">Tên Người Yêu</label>
+            <input class="form-control" ng-model="inputs.ten" placeholder="Tên người yêu">
+            <p style="color: red;" ng-if="!inpust.ten">
+                Yêu cầu nhập tên
+            </p>
+            <label class="float-start">Tuổi Người Yêu</label>
+            <input class="form-control" ng-model="inputs.tuoi" placeholder="Tuổi người yêu">
+            <p style="color: red;" ng-if="!inpust.ten">
+                Yêu cầu nhập tuôi
+            </p>
+            <label class="float-start">Biệt danh người yêu</label>
+            <input class="form-control" ng-model="inputs.biet_danh"
+                placeholder=" biệt danh người yêu">
+            <p style="color: red;" ng-if="!inpust.biet_danh">
+                Yêu cầu nhập biệt danh
+            </p>
+            <label class="float-start">Địa Chỉ Người Yêu</label>
+            <input class="form-control" ng-model="inputs.dia_chi" placeholder="địa chỉ người yêu">
+            <p style="color: red;" ng-if="!inpust.dia_chi">
+                Yêu cầu nhập địa chỉ
+            </p>
+            <label class="float-start">Sở Thích Người Yêu</label>
+            <input class="form-control" ng-model="inputs.so_thich" placeholder="Sở thích người yêu">
+            <p style="color: red;" ng-if="!inpust.dia_chi">
+                Yêu cầu nhập sở thích
+            </p>
+            <label class="float-start">Trạng thái người Yêu</label><br>
+            <div class="float-start">
+                <input type="radio" value="0" ng-model="inputs.trang_thai"> Đang dỗi <br>
+                <input type="radio" value="1" ng-model="inputs.trang_thai"> Đang yêu <br>
+                <input type="radio" value="2" ng-model="inputs.trang_thai"> dang yey
+                <p style="color: red;" ng-if="!inpust.trang_thai">
+                    Yêu cầu chọn
+                </p>
+            </div>
+            <label class="float-start">Ảnh Người Yêu</label>
+            <input class="form-control" ng-model="inputs.image" placeholder="Ảnh người yêu">
+            <p style="color: red;" ng-if="!inpust.image">
+                Yêu cầu nhập ảnh
+            </p>
+            <!-- kiểm tra việc lắng nghe dữ liệu của ng-model -->
+            <p>{{inputs.ten}}</p>
+            <p>{{inputs.tuoi}}</p>
+            <!-- <button class="btn btn-primary mb-3" type="button" ng-click="editId()">Cập nhật</button> -->
+            <button class="btn btn-danger mb-3" ng-click="hideForm()">Hủy</button>
+            <button class="btn btn-primary mb-3" type="submit" >Lưu</button>
+
+        </form>
+    </div>
+</div>

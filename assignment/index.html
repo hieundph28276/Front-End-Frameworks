@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Finance</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" href="img/logo.png" type="image/png">
 
     <link rel="stylesheet" href="css/bootstrap1.min.css" />
@@ -43,7 +43,7 @@
 
     <link rel="stylesheet" href="css/style1.css" />
     <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
-    
+
 </head>
 
 <body ng-app="angularjs-route" class="crm_body_bg">
@@ -66,7 +66,7 @@
                 </a>
                 <ul>
                     <li><a class="active" href="#!/">Danh Sách BĐS</a></li>
-                    <li><a href="#!/thong-tin-sv">Thông Tin Sinh Viên</a></li>
+                    <li><a href="#!/thong-tin-sv">Liên hệ</a></li>
                 </ul>
             </li>
             <li class="">
@@ -210,7 +210,7 @@
 
         <div class="main_content_iner ">
             <div class="container-fluid plr_30 body_white_bg pt_30" ng-view>
-                
+
             </div>
         </div>
 
@@ -276,12 +276,25 @@
     <script src="vendors/apex_chart/stackbar.js"></script>
     <script src="vendors/apex_chart/area_chart.js"></script>
 
+
     <script src="vendors/apex_chart/bar_active_1.js"></script>
     <script src="vendors/chartjs/chartjs_active.js"></script>
+
+
+
+    <script>
+        const API_URL = 'http://localhost:3000';
+        const API_BDS = `${API_URL}/BDS`;
+        const API_TTCN = `${API_URL}/thong_tin`;
+    </script>
     <script src="libs/angular.min.js"></script>
     <script src="libs/angular-route.min.js"></script>
-    <script src="controllers/DanhsachBDS.js"></script>
     <script src="main.js"></script>
+    <script src="controllers/DanhsachBDS.js"></script>
+    <script src="controllers/ThemMoiBDS.js"></script>
+    <script src="controllers/ThemMoiBDS.js"></script>
+    <script src="controllers/thong-tin-sv.js"></script>
+    <script src="controllers/EditBDS.js"></script>
 
 </body>
 

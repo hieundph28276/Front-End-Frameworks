@@ -1,4 +1,7 @@
 <div>
+    <a href="#!/them-moi" class="float-start">
+        <button class="btn btn-primary mb-3">Thêm Mới</button>
+    </a>
     <h1>{{loading ? 'loading.....' : ''}}</h1>
     <table class="table table-borderless">
         <thead>
@@ -21,9 +24,9 @@
                 <td ng-if="!BDS.status == 1">Chung Cư</td>
                 <td ng-if="!BDS.status == 0">Đất</td>
                 <td ng-if="!BDS.status == 2">Nhà Đất</td>
-                <td>{{BDS.area}}</td>
-                <td>{{BDS.price}}</td>
-                <td><img src="{{BDS.image_url}}" alt=""></td>
+                <td>{{BDS.area}} m²</td>
+                <td>{{BDS.price}} VND</td>
+                <td><img src="{{BDS.image_url}}" alt="" style="width: 300px;"></td>
                 <!-- <td>{{BDS.status}}</td> -->
                 <td ng-if="!BDS.status == 1">Đã cọc</td>
                 <td ng-if="!BDS.status == 0">Chưa Bán</td>
@@ -34,12 +37,12 @@
                             Chi Tiết
                         </button>
                     </a>
-                    <a href="">
+                    <a href="#!/sua-bds/{{BDS.id}}">
                         <button class="btn btn-warning">
                             Sửa
                         </button>
                     </a>
-                    <button class="btn btn-danger">
+                    <button class="btn btn-danger" ng-click="onDelete(BDS.id)">
                         xóa
                     </button>
                 </td>

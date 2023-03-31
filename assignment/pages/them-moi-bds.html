@@ -1,0 +1,54 @@
+<div class="controller">
+    <form action="">
+        <div class="form-group">
+            <label for="formGroupExampleInput" for="">Tên bất động sản</label>
+            <input class="form-control" type="text" ng-model="inpust.name">
+            <p style="color: red;" ng-if="!inpust.name">
+                Bạn chưa nhập tên cho bất động sản
+            </p>
+        </div>
+        <label for="formGroupExampleInput" for="">Mã loại bất động sản</label>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="0" ng-model="inpust.type_id">
+                <label class="form-check-label" for="">Đất</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="1" ng-model="inpust.type_id">
+                <label class="form-check-label" for="">Chung Cư</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="2" ng-model="inpust.type_id">
+                <label class="form-check-label" for="">Nhà Đất</label>
+            </div>
+            <p style="color: red;" ng-if="!inpust.type_id">
+                Bạn chưa chọn mã loại loại cho bất động sản
+            </p>
+        </div>
+        <label for="">Diện tích bất động sản</label>
+        <input class="form-control" type="text" ng-model="inputs.area">
+        <p style="color: red;" ng-if="!inpust.area">
+            Bạn chưa nhập diện tích cho bất động sản
+        </p>
+        <label for="formGroupExampleInput" for="">Giá bất động sản</label>
+        <input class="form-control" type="text" ng-model="inpust.price">
+        <p style="color: red;" ng-if="!inpust.price">
+            Bạn chưa nhập giá cho bất động sản
+        </p>
+        <label for="formGroupExampleInput" for="">Ảnh bất động sản</label>
+        <input class="form-control" type="text" ng-model="inpust.image_url">
+        <p style="color: red;" ng-if="!inpust.image_url">
+            Bạn chưa nhập ảnh cho bất động sản
+        </p>
+        <label for="formGroupExampleInput" for="">Trạng thái bất động sản</label>
+        <div>
+            <input type="radio" value="0" ng-model="inpust.status"> Đất <br>
+            <input type="radio" value="1" ng-model="inpust.status"> Chung cư <br>
+            <input type="radio" value="2" ng-model="inpust.status"> Nhà đất
+            <p style="color: red;" ng-if="!inpust.price">
+                Bạn chưa chọn trạng thái cho bất động sản
+            </p>
+        </div>
+        <button class="btn btn-primary mb-3" type="button" ng-click="onSave()">Lưu</button>
+    </form>
+</div>
